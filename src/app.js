@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from '@firebase/app';
 import '@firebase/auth';
-import { Header, Button, Spinner } from './components/common'; 
+import { Header, Button, Spinner, Card } from './components/common'; 
 import LoginForm from './components/LoginForm';
 
 class App extends Component {
@@ -48,10 +48,10 @@ class App extends Component {
 
 	render() {
 		return (
-				<View>
+				<Card>
 					<Header headerText="Authentication" />
-					{this.renderContent()}
-				</View>
+					{this.renderContent()}	
+				</Card>
 			);
 	}
 } 
